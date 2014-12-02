@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sky133</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--custom css-->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/yamm.css" rel="stylesheet">
+    <link href="css/half-slider.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/bootstrapValidator.css"/>
+    <!-- Custom CSS -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+    <!--validation-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+    <div class="jumbo-menu">
+      <div class="navbar yamm navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"></a>
+          </div>
+          <div id="navbar-collapse-1" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <!-- Classic list -->
+              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle img-onlineservice cus-online-service-tab uppercase-txt">online services<!--<b class="   chevron-up"></b>--></a>
+              
+              
+              
+            </li>
+            <!-- Accordion demo -->
+            <li class="dropdown "><a href="#" data-toggle="dropdown" class="dropdown-toggle cus-help-tab img-help ">HELP<b class="up-down-arrow "></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="yamm-content">
+                  <div class="row">
+                    <div id="accordion" class="panel-group">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a></h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-body">Ut consectetur ullamcorper purus a rutrum. Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna. </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a></h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                          <div class="panel-body">Nullam pretium fermentum sapien ut convallis. Suspendisse vehicula, magna non tristique tincidunt, massa nisi luctus tellus, vel laoreet sem lectus ut nibh. </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a></h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                          <div class="panel-body">Praesent leo quam, faucibus at facilisis id, rhoncus sit amet metus. Sed vitae ipsum non nibh mattis congue eget id augue. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Classic dropdown -->
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle img-downlord cus-downlord-tab">DOWNLOAD<!--<b class="caret"></b>--></a>
+          
+        </li>
+        <!-- Pictures -->
+        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle cus-login-tab cus-btn-color ">LOGIN<!--<b class="caret">--></b></a>
+        <ul class="dropdown-menu login-drop-down login-box-border-shadow">
+          <li>
+            <div class="yamm-content">
+              <div class="row">
+                <div class="col-xs-12 padding-zero-class ">
+                  <div class="col-xs-5">
+                    <h4 class="login-box-color font-size">NEW CUSTOMER</h4>
+                    <p>New to SKY133? Create an account to get started today...</p>
+                    <a href="sky133-register-inner-v1.html">  <button type="submit" class="btn btn-primary btn-lg cus-send-btn btn-gradient-login font-weight-600">CREATE MY ACCOUNT</button></a>
+                  </div>
+                  <div class="col-xs-7 new-cust-border-left col-xs-7-padding-left">
+                    <form id="defaultForm" method="post" class="form-horizontal" action="ajaxSubmit.php">
+                      <p class="login-box-color-01 font-size">LOGIN</p>
+                      <div class="col-sm-12 col-xs-3-cus ">
+                        <div class="form-group">
+                          
+                          <input type="text" class="form-control" id="username"
+                          placeholder="Username" name="username">
+                          
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-xs-3-cus">
+                        <div class="form-group">
+                          
+                          <input type="password" class="form-control" id="password"
+                          placeholder="Password" name="password" >
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="col-sm-6 col-xs-3-cus">
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-padding-01 cus-send-btn btn-gradient-login font-weight-600 ">SIGN IN</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-3-cus">
+                        <div class="form-group">
+                          <a href="sky133-forgot-password-v1.html" ><p class="cus-margin-menu-forgot-password">Forgot Password</p> </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  
+                </div>
+                
+                
+                
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class=""><a href="sky133-register-inner-v1.html" class="sign-up-btn-menu">SIGNUP<b class=""></b></a>
+    </li>
+  </ul>
+</div>
+</div>
+</div> <!-- Fixed navbar -->
+</div><!--jumbo-menu-->
+<nav class="logoarea"><!--logoarea-->
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a href="index.html">   <img src="img/logo.png" class="logo img-responsive " alt="Circular Image"> </a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav col-lg-1-cus-menu-2  cust-nav-1">
+    <li>
+      <a href="index.html" class="home-icon logo-area-cust-padding"></a>
+    </li>
+    <li>
+      <a href="sky133-live-games.html" class="logo-area-cust-padding uppercase-txt">live GAMES</a>
+    </li>
+    <li>
+      <a href="sky133-casino.html" class="logo-area-cust-padding uppercase-txt">casino  </a>
+    </li>
+    <li>
+      <a href="sky133-gameplay.html" class="logo-area-cust-padding">GAMES</a>
+    </li>
+    <li>
+      <a href="sky133-mobile.html" class="logo-area-cust-padding cust-active-color">MOBILE GAMES </a>
+    </li>
+    <li>
+      <a href="sky133-promotions-v2.html" class="logo-area-cust-padding"> PROMOTIONS</a>
+    </li>
+  </ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav><!--logoarea-->
+<div class="mobile-game-img">
+<div class="container">
+  <img src="img/mobile-txt.png" class="logo img-responsive mobile-txt " alt="Circular Image">
+</div>
+<div class="container"> <h2 class="Casino"> </h2></div>
+
+</div>
+<hr class="style-two" >
+<div class="col-lg-12 m-banner-add">
+<div clss="">
+  <div class="container">
+    <img src="img/mobilegame/m-banner-add.png">
+  </div>
+</div>
+</div>
+<div class="section-game-1  bg-mobile-setion livegame">
+<div class="container">
+  <div class='row'>
+    <div class="col-md-12  row-padding-b">
+      
+      
+      <div class="row">
+        
+        <div class="col-md-4 ">
+          <div class="livegame-box-1 border-fade ">
+            <a class="" href="#"><img alt="" src="img/mobilegame/alaskan.png" class="logo casino-box-img img-responsive   " alt="Circular Image"></a>
+            <div class="mobile-box-1">
+              <h4 class="uppercase-txt";>alaska fishing</h4>
+              <p>Video Slot Machine</p>
+              
+              <div class="col-md-12">
+                <div class="col-sm-3 cus-width-box">
+                </div>
+                
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/android.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> android</p>
+                  </div>
+                </div>
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/iphone.png" class="mobile-box-image">
+                    <p class="uppercase-txt";>iphone</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 mobile-icon-padding">
+                  <div class="bg-box mobile-box" >
+                    <img src="img/icon/ipad.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> ipad</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 cus-width-box">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="livegame-box-1 border-fade ">
+            <a class="" href="#"><img alt="" src="img/mobilegame/avalon.png" class="logo casino-box-img img-responsive  " alt="Circular Image"></a>
+            <div class="mobile-box-1">
+              <h4 class="uppercase-txt";>alaska fishing</h4>
+              <p>Video Slot Machine</p>
+              
+              <div class="col-md-12">
+                <div class="col-sm-3 cus-width-box">
+                </div>
+                
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/android.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> android</p>
+                  </div>
+                </div>
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/iphone.png" class="mobile-box-image">
+                    <p class="uppercase-txt";>iphone</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 mobile-icon-padding">
+                  <div class="bg-box mobile-box" >
+                    <img src="img/icon/ipad.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> ipad</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 cus-width-box">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="livegame-box-1 border-fade ">
+            <a class="" href="#"><img alt="" src="img/mobilegame/beachbabes.png" class="logo casino-box-img img-responsive  " alt="Circular Image"></a>
+            <div class="mobile-box-1">
+              <h4 class="uppercase-txt";>alaska fishing</h4>
+              <p>Video Slot Machine</p>
+              
+              <div class="col-md-12">
+                <div class="col-sm-3 cus-width-box">
+                </div>
+                
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/android.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> android</p>
+                  </div>
+                </div>
+                <div class="col-sm-3  mobile-icon-padding">
+                  <div class="bg-box mobile-box">
+                    <img src="img/icon/iphone.png" class="mobile-box-image">
+                    <p class="uppercase-txt";>iphone</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 mobile-icon-padding">
+                  <div class="bg-box mobile-box" >
+                    <img src="img/icon/ipad.png" class="mobile-box-image">
+                    <p class="uppercase-txt";> ipad</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 cus-width-box">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      
+      </div><!--col-md-12-->
+      <div class="col-md-12">
+        
+        
+        <div class="row">
+          
+          <div class="col-md-4 ">
+            <div class="livegame-box-1 border-fade">
+              <a class="" href="#"><img alt="" src="img/mobilegame/alaskan.png" class="logo casino-box-img img-responsive  " alt="Circular Image"></a>
+              <div class="mobile-box-1">
+                <h4 class="uppercase-txt";>alaska fishing</h4>
+                <p>Video Slot Machine</p>
+                
+                <div class="col-md-12">
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                  
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/android.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> android</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/iphone.png" class="mobile-box-image">
+                      <p class="uppercase-txt";>iphone</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mobile-icon-padding">
+                    <div class="bg-box mobile-box" >
+                      <img src="img/icon/ipad.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> ipad</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="livegame-box-1  border-fade">
+              <a class="" href="#"><img alt="" src="img/mobilegame/avalon.png" class="logo casino-box-img img-responsive  " alt="Circular Image"></a>
+              <div class="mobile-box-1">
+                <h4 class="uppercase-txt";>alaska fishing</h4>
+                <p>Video Slot Machine</p>
+                
+                <div class="col-md-12">
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                  
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/android.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> android</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/iphone.png" class="mobile-box-image">
+                      <p class="uppercase-txt";>iphone</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mobile-icon-padding">
+                    <div class="bg-box mobile-box" >
+                      <img src="img/icon/ipad.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> ipad</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="livegame-box-1 border-fade ">
+              <a class="" href="#"><img alt="" src="img/mobilegame/beachbabes.png" class="logo casino-box-img img-responsive  " alt="Circular Image"></a>
+              <div class="mobile-box-1">
+                <h4 class="uppercase-txt";>alaska fishing</h4>
+                <p>Video Slot Machine</p>
+                
+                <div class="col-md-12">
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                  
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/android.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> android</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3  mobile-icon-padding">
+                    <div class="bg-box mobile-box">
+                      <img src="img/icon/iphone.png" class="mobile-box-image">
+                      <p class="uppercase-txt";>iphone</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mobile-icon-padding">
+                    <div class="bg-box mobile-box" >
+                      <img src="img/icon/ipad.png" class="mobile-box-image">
+                      <p class="uppercase-txt";> ipad</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 cus-width-box">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+        </div><!--col-md-12-->
+        </div><!--row-->
+        </div><!--container-->
+        </div><!--section-game-1-->
+        <hr class="style-two" style="padding-top: 2px;" >
+        <div class="logo-bg-image cus-padding-left-right">
+          <div class="container">
+            
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="col-lg-3 ">
+                  
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo1.png" class="logo img-responsive  " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo2.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo3.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo4.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo5.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo6.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo7.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo8.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo9.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-1 col-lg-1-cus-game-row">
+                  <img src="img/logos/logo10.png" class="logo img-responsive " alt="Circular Image">
+                </div>
+                <div class="col-lg-3 ">
+                  
+                </div>
+              </div>
+            </div>
+            </div><!--container-->
+          </div>
+          <div class="section-footer footer-bg-image">
+            <div class="container">
+              <div id="footer">
+                <div class="row">
+                  <div class="col-md-12 footer-link-css-center">
+                    <p><a href="#" class="footer-link-css">About Us</a><a href="#" class="footer-link-css" >•   Contact Us </a><a href="#" class="footer-link-css" >•   Deposits </a><a href="#" class="footer-link-css">•   FAQs</a><a href="#" class="footer-link-css">•   Technical Problems </a><a href="#" class="footer-link-css">•   Acting Joint Venture </a> <a href="#" class="footer-link-css">•   Liability Provisions </a><a href="#" class="footer-link-css">•   Privacy Policy </a></p>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="container">
+                  
+                  <p class="footer-copyright">Copyright © 2014, Sky133. All Rights Reserved</p>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="container">
+                  
+                  <p class="footer-descri">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<script src="js/jquery.js"></script>-->
+          <script type="text/javascript">
+          $(document).ready(function() {
+          $('#defaultForm') .bootstrapValidator({
+          live: 'disabled',
+          
+          message: 'This value is not valid',
+          feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-exclamation-sign',
+          validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+          username: {
+          message: 'The username is not valid',
+          validators: {
+          notEmpty: {
+          message: 'The username is required and can\'t be empty'
+          },
+          stringLength: {
+          min: 6,
+          max: 30,
+          message: 'The username must be more than 6 and less than 30 characters long'
+          },
+          /*remote: {
+          url: 'remote.php',
+          message: 'The username is not available'
+          },*/
+          regexp: {
+          regexp: /^[a-zA-Z0-9_\.]+$/,
+          message: 'The username can only consist of alphabetical, number, dot and underscore'
+          }
+          }
+          },
+          email: {
+          validators: {
+          notEmpty: {
+          message: 'Please enter email address'
+          },
+          emailAddress: {
+          message: 'The input is not a valid email address'
+          }
+          }
+          },
+          password: {
+          validators: {
+          notEmpty: {
+          message: 'Please enter password'
+          }
+          }
+          }
+          }
+          })
+          .on('success.form.bv', function(e) {
+          // Prevent form submission
+          e.preventDefault();
+          // Get the form instance
+          var $form = $(e.target);
+          // Get the BootstrapValidator instance
+          var bv = $form.data('bootstrapValidator');
+          // Use Ajax to submit form data
+          $.post($form.attr('action'), $form.serialize(), function(result) {
+          console.log(result);
+          }, 'json');
+          });
+          });
+          </script>
+          <!-- Script to Activate the Carousel -->
+          <script>
+          $('.carousel').carousel({
+          interval: 50000 //changes the speed
+          })
+          </script>
+          <script src="js/bootstrap.min.js"></script>
+          <script>
+          $(function() {
+          window.prettyPrint && prettyPrint()
+          $(document).on('click', '.yamm .dropdown-menu', function(e) {
+          e.stopPropagation()
+          })
+          })
+          </script>
+          <!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          
+        </body>
+      </html>
