@@ -7,6 +7,14 @@ Full HTML5 and CSS3 Website Design and Development
 
 ### Changelog
 
+**Version 2**
+
+* Creating New Transfer Page.
+* Update Validations
+* CSS Improvements
+* Adding accordion to Binding Bank and develope a form section.
+
+
 **Version 1**
 
 * Cropping/Resizing images

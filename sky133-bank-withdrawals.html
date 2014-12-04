@@ -134,7 +134,6 @@
 </div>
 <!-- /.container -->
 </nav><!--logoarea-->
-
 <nav class="nav-menu-3">
 <div class="container cus-padding">
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -145,7 +144,6 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-
 </div>
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse navbar-nav-cus-nav navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -187,7 +185,7 @@
       <a href="sky133-bank-deposit.html">DEPOSIT </a>
     </li>
     <li>
-      <a href="#" class="uppercase-txt">transfer</a>
+      <a href="sky133-bank-transfer.html" class="uppercase-txt">transfer</a>
     </li>
     <li>
       <a href="#" class="cust-active-color">WITHDRAWALS </a>
@@ -225,7 +223,7 @@
                 <div class="col-lg-3 padding-zero-class cus-padding-top">
                   <p class="font-color-white">Bank Cards </p>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-8 ">
                   <div class="withdraal-bank-padding">
                     <div class="form-group cust-form-group-with">
                       
@@ -243,210 +241,312 @@
                         
                       </div>
                     </div>
-                  </div>  </div>
-                  <div class="col-lg-2"></div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                
+              </div>
+              </div><!--row-->
+              <div class="row  ">
+                <div class="col-lg-12 ">
+                  
+                  <div class="col-lg-3 padding-zero-class cus-padding-top">
+                    <p class="font-color-white"></p>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="withdraal-bank-padding-01">
+                      <div class="form-group">
+                        
+                        
+                      </div>
+                      
+                      
+                      <div class="form-group ">
+                        
+                        <div class="col-lg-2 cust-btn-class">
+                          <!--<button type="button" class="btn btn-link button-hide test " data-toggle="#jobInfo"><span class="test test-s12 ">+ Add Binding Bank Card</span></button>-->
+                          <button type="button" class="btn add-binding-card button-hide txt-decoration " data-toggle="#jobInfo"><span class="test test-s12 ">+ Add Binding Bank Card</span></button>
+                          
+                        </div>
+                      </div>
+                      <form id="defaultForm-with-02" method="post" class="form-horizontal" action="target.php">
+                        <div id="jobInfo" style="display: none;" class="cust-hide-class test-s">
+                          <div class="form-group">
+                            <label class="col-lg-4 cust-hide-class-padding">Beneficiary<sup>*</sup></label>
+                            <div class="col-lg-7">
+                              <input type="text" class="form-control cus-input-txt" name="beneficiary"
+                              required data-bv-notempty-message="The Beneficiary is required" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 cust-hide-class-padding">Bank <sup>*</sup></label>
+                            <div class="col-lg-7">
+                              <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="bank " name="bank " style="width: 100% !important;">
+                                <option value="gs"></option>
+                                <option value="ly">Agricultural Bank of China</option>
+                                <option value="jt">Bank of Communications</option>
+                                <option value="ms">Minsheng Bank</option>
+                                <option value="zx">CITIC Bank</option>
+                                <option value="js">China Construction Bank</option>
+                                <option value="zs">China Merchants Bank</option>
+                                <option value="yz">Postal Savings</option>
+                                <option value="xy">Industrial Bank</option>
+                                <option value="zg">Bank of China</option>
+                                <option value="pf">Shanghai Pudong Development Bank</option>
+                                <option value="gd">Everbright Bank</option>
+                                <option value="pa">Ping An Bank</option>
+                                <option value="hx">Huaxia Bank</option>
+                                <option value="bj">Bank of Beijing</option>
+                                <option value="gf">Guangdong Development Bank</option>
+                                <option value="sh">Shanghai Bank</option>
+                                <option value="jsyh">Jiangsu Bank</option>
+                                <option value="hf">Prudential Bank</option>
+                                <option value="bjlc">Beijing Rural Commercial Bank</option>
+                                <option value="cqlc">Chongqing Rural Commercial Bank</option>
+                                <option value="bh">Bohai Bank</option>
+                                
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 cust-hide-class-padding">Card number <sup>*</sup></label>
+                            <div class="col-lg-7">
+                              <input type="text" class="form-control cus-input-txt" name="card-number" id="card-number"
+                              required data-bv-notempty-message="The Card number is required" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 cust-hide-class-padding">Bank <sup>*</sup></label>
+                            <div class="col-lg-7">
+                              <input type="text" class="form-control cus-input-txt" name="bank-n"
+                              required data-bv-notempty-message="The bank name is required" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 cust-hide-class-padding"></label>
+                            <div class="col-lg-7 padding-zero-class">
+                              <div class="col-sm-6 padding-zero-class btn-area-txt-align">
+                                <button type="submit" class=" ok-btn btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >OK</button>
+                              </div>
+                              <div class="col-sm-6 btn-area-txt-align ">
+                                <button type="button" class="button-s btn btn-primary btn-lg  buttonm2  cancel-menu " >Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-2 "></div>
                   
                 </div>
                 </div><!--row-->
                 <div class="row  ">
-                  <div class="col-lg-12 ">
+                  <div class="col-lg-12 recharge-amount1">
                     
                     <div class="col-lg-3 padding-zero-class cus-padding-top">
-                      <p class="font-color-white"></p>
+                      <p class="font-color-white">Withdraw Amount  </p>
                     </div>
-                    <div class="col-lg-4 ">
-                      <div class="withdraal-bank-padding-01">
-                        <div class="form-group">
-                          
-                          <div class="col-lg-12 add-bank-card">
-                            <p>+ Add Binding Bank Card</p>
-                            
-                          </div>
-                          
-                          
-                        </div>
+                    <div class="col-lg-3 withdraw-amount-game">
+                      <div class="form-group ">
+                        <input type="text" class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="price" name="price" placeholder=" 200.00">
                       </div>
                     </div>
-                    <div class="col-lg-2 "></div>
-                    
+                    <div class="col-lg-8 cus-padding-top "></div>
+                    <p> Yuan </p>
                   </div>
                   </div><!--row-->
                   <div class="row  ">
-                    <div class="col-lg-12 recharge-amount1">
+                    <div class="col-lg-12 recharge-amount1t">
                       
                       <div class="col-lg-3 padding-zero-class cus-padding-top">
                         <p class="font-color-white">Withdraw Amount  </p>
                       </div>
-                      <div class="col-lg-3 withdraw-amount-game">
+                      <div class="col-lg-4 withdraw-amount-game">
                         <div class="form-group ">
-                          <input type="text" class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="price" name="price" placeholder=" 200.00">
+                          
+                          <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="game" name="game">
+                            <option value="0">*GAME</option>
+                            <option value="1">GAME</option>
+                            <option value="2">GAME</option>
+                            <option value="3">GAME</option>
+                            
+                          </select>
                         </div>
                       </div>
-                      <div class="col-lg-8 cus-padding-top "></div>
-                      <p> Yuan </p>
+                      <div class="col-lg-5 cus-padding-top"></div>
+                      
                     </div>
                     </div><!--row-->
-                    <div class="row  ">
-                      <div class="col-lg-12 recharge-amount1t">
-                        
-                        <div class="col-lg-3 padding-zero-class cus-padding-top">
-                          <p class="font-color-white">Withdraw Amount  </p>
-                        </div>
-                        <div class="col-lg-4 withdraw-amount-game">
-                          <div class="form-group ">
+                    <div class="tab-txt-padding">
+                      
+                      <div class="row  ">
+                        <div class="col-lg-12 recharge-amount1t">
+                          
+                          <div class="col-lg-3">
                             
-                            <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="game" name="game">
-                              <option value="0">*GAME</option>
-                              <option value="1">GAME</option>
-                              <option value="2">GAME</option>
-                              <option value="3">GAME</option>
-                              
-                            </select>
                           </div>
-                        </div>
-                        <div class="col-lg-5 cus-padding-top"></div>
-                        
+                          <div class="col-lg-4">
+                            <div class="form-group ">
+                              
+                              <button type="submit" class="btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >SUBMIT</button>
+                              
+                            </div>
+                          </div>
+                          
+                          
+                        </div></div>
+                        </div><!--row-->
+                        </div><!--col-lg-8-->
+                        <div class="col-lg-4 ">
+                          </div><!--col-lg-4-->
+                        </form>
                       </div>
-                      </div><!--row-->
-                      <div class="tab-txt-padding">
-                        
-                        <div class="row  ">
-                          <div class="col-lg-12 recharge-amount1t">
-                            
-                            <div class="col-lg-3">
-                              
-                            </div>
-                            <div class="col-lg-4">
-                              <div class="form-group ">
-                                
-                                <button type="submit" class="btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >SUBMIT</button>
-                                
-                              </div>
-                            </div>
-                            
-                            
-                          </div></div>
-                          </div><!--row-->
-                          </div><!--col-lg-8-->
-                          <div class="col-lg-4 ">
+                      <div class="col-lg-1 ">
+                        </div><!--col-lg-1-->
+                        <div class="withdrawals">
+                          <div class="col-lg-3 left-border">
+                            <p class="withdrawals-steps"> Withdrawals Steps: </p>
+                            <p>1. Add Binding bank card</p>
+                            <p>2. Enter the withdrawal amount and gaming platform</p>
+                            <p>3. After the relevant departments withdrawal is  approved, the money will instantly reach your  bank account; before that, members can cancel their own in logging withdrawal</p>
+                            <p>4. Sum withdrawals in 5 working days to arrive after the success of “automatic withrdawals  successful” application record prompt arraival.   Failure to cash or check the reason for the failure Help Center.</p>
                             </div><!--col-lg-4-->
-                          </form>
+                          </div>
+                          
+                          
+                          </div><!--row-->
+                          
                         </div>
-                        <div class="col-lg-1 ">
-                          </div><!--col-lg-1-->
-                          <div class="withdrawals">
-                            <div class="col-lg-3 left-border">
-                              <p class="withdrawals-steps"> Withdrawals Steps: </p>
-                              <p>1. Add Binding bank card</p>
-                              <p>2. Enter the withdrawal amount and gaming platform</p>
-                              <p>3. After the relevant departments withdrawal is  approved, the money will instantly reach your  bank account; before that, members can cancel their own in logging withdrawal</p>
-                              <p>4. Sum withdrawals in 5 working days to arrive after the success of “automatic withrdawals  successful” application record prompt arraival.   Failure to cash or check the reason for the failure Help Center.</p>
-                              </div><!--col-lg-4-->
+                      </div>
+                      <div class="section-footer footer-bg-image">
+                        <div class="container">
+                          <div id="footer">
+                            <div class="row">
+                              <div class="col-md-12 footer-link-css-center">
+                                <p><a href="#" class="footer-link-css">About Us</a><a href="#" class="footer-link-css" >•   Contact Us </a><a href="#" class="footer-link-css" >•   Deposits </a><a href="#" class="footer-link-css">•   FAQs</a><a href="#" class="footer-link-css">•   Technical Problems </a><a href="#" class="footer-link-css">•   Acting Joint Venture </a> <a href="#" class="footer-link-css">•   Liability Provisions </a><a href="#" class="footer-link-css">•   Privacy Policy </a></p>
+                              </div>
                             </div>
                             
-                            
-                            </div><!--row-->
-                            
                           </div>
-                        </div>
-                        <div class="section-footer footer-bg-image">
-                          <div class="container">
-                            <div id="footer">
-                              <div class="row">
-                                <div class="col-md-12 footer-link-css-center">
-                                  <p><a href="#" class="footer-link-css">About Us</a><a href="#" class="footer-link-css" >•   Contact Us </a><a href="#" class="footer-link-css" >•   Deposits </a><a href="#" class="footer-link-css">•   FAQs</a><a href="#" class="footer-link-css">•   Technical Problems </a><a href="#" class="footer-link-css">•   Acting Joint Venture </a> <a href="#" class="footer-link-css">•   Liability Provisions </a><a href="#" class="footer-link-css">•   Privacy Policy </a></p>
-                                </div>
-                              </div>
+                          <div class="row">
+                            <div class="container">
+                              
+                              <p class="footer-copyright">Copyright © 2014, Sky133. All Rights Reserved</p>
                               
                             </div>
-                            <div class="row">
-                              <div class="container">
-                                
-                                <p class="footer-copyright">Copyright © 2014, Sky133. All Rights Reserved</p>
-                                
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="container">
-                                
-                                <p class="footer-descri">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
-                                
-                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="container">
+                              
+                              <p class="footer-descri">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
+                              
                             </div>
                           </div>
                         </div>
-                        <!--<script src="js/jquery.js"></script>-->
-                        <!-- Script to Activate the Carousel -->
-                        <script>
-                        $('.carousel').carousel({
-                        interval: 50000 //changes the speed
-                        })
-                        </script>
-                        
-                        <script src="js/bootstrap.min.js"></script>
-                        <script>
-                        $(function() {
-                        window.prettyPrint && prettyPrint()
-                        $(document).on('click', '.yamm .dropdown-menu', function(e) {
-                        e.stopPropagation()
-                        })
-                        })
-                        </script>
-                        <!-- Bootstrap core JavaScript
-                        ================================================== -->
-                        <!-- Placed at the end of the document so the pages load faster -->
-                        <script type="text/javascript">
-                        $(document).ready(function() {
-                        $('#defaultForm-with')
-                        .bootstrapValidator({
-                        live: 'disabled',
-                        message: 'This value is not valid',
-                        feedbackIcons: {
-                        valid: 'glyphicon glyphicon-ok',
-                        invalid: 'glyphicon glyphicon-exclamation-sign',
-                        validating: 'glyphicon glyphicon-refresh'
-                        },
-                        fields: {
-                        
-                        game: {
-                        validators: {
-                        notEmpty: {
-                        message: 'The Country is required and can\'t be empty'
-                        },
-                        
-                        }
-                        },
-                        price: {
-                        validators: {
-                        notEmpty: {},
-                        digits: {},
-                        
-                        }
-                        },
-                        /* phoneNumber: {
-                        validators: {
-                        notEmpty: {},
-                        digits: {},
-                        phone: {
-                        country: 'US'
-                        }
-                        }
-                        }*/
-                        }
-                        })
-                        .on('success.form.bv', function(e) {
-                        // Prevent form submission
-                        e.preventDefault();
-                        // Get the form instance
-                        var $form = $(e.target);
-                        // Get the BootstrapValidator instance
-                        var bv = $form.data('bootstrapValidator');
-                        // Use Ajax to submit form data
-                        $.post($form.attr('action'), $form.serialize(), function(result) {
-                        console.log(result);
-                        }, 'json');
-                        });
-                        });
-                        </script>
-                      </body>
-                    </html>
+                      </div>
+                      <script>
+                      $(document).ready(function(){
+                      $("button").click(function(){
+                      $(".test").hide();
+                      });
+                      });
+                      </script>
+                      <script>
+                      $(document).ready(function(){
+                      $(".button-s").click(function(){
+                      $(".test-s").hide();
+                      $(".test-s12").visible();
+                      });
+                      });
+                      </script>
+                      <script type="text/javascript">
+                      $(document).ready(function() {
+                      $('button[data-toggle]').on('click', function() {
+                      var $target = $($(this).attr('data-toggle'));
+                      $target.toggle();
+                      if (!$target.is(':visible')) {
+                      // Enable the submit buttons in case additional fields are not valid
+                      $('#contactForm').data('bootstrapValidator').disableSubmitButtons(false);
+                      }
+                      });
+                      $('#contactForm').bootstrapValidator();
+                      });
+                      </script>
+                      <!--<script src="js/jquery.js"></script>-->
+                      <!-- Script to Activate the Carousel -->
+                      <script>
+                      $('.carousel').carousel({
+                      interval: 50000 //changes the speed
+                      })
+                      </script>
+                      
+                      <script src="js/bootstrap.min.js"></script>
+                      <script>
+                      $(function() {
+                      window.prettyPrint && prettyPrint()
+                      $(document).on('click', '.yamm .dropdown-menu', function(e) {
+                      e.stopPropagation()
+                      })
+                      })
+                      </script>
+                      <!-- Bootstrap core JavaScript
+                      ================================================== -->
+                      <!-- Placed at the end of the document so the pages load faster -->
+                      <script type="text/javascript">
+                      $(document).ready(function() {
+                      $('#defaultForm-with')
+                      .bootstrapValidator({
+                      live: 'disabled',
+                      message: 'This value is not valid',
+                      feedbackIcons: {
+                      valid: 'glyphicon glyphicon-ok',
+                      invalid: 'glyphicon glyphicon-exclamation-sign',
+                      validating: 'glyphicon glyphicon-refresh'
+                      },
+                      fields: {
+                      
+                      game: {
+                      validators: {
+                      notEmpty: {
+                      message: 'The Country is required and can\'t be empty'
+                      },
+                      
+                      }
+                      },
+                      price: {
+                      validators: {
+                      notEmpty: {},
+                      digits: {},
+                      
+                      }
+                      },
+                      /* phoneNumber: {
+                      validators: {
+                      notEmpty: {},
+                      digits: {},
+                      phone: {
+                      country: 'US'
+                      }
+                      }
+                      }*/
+                      }
+                      })
+                      .on('success.form.bv', function(e) {
+                      // Prevent form submission
+                      e.preventDefault();
+                      // Get the form instance
+                      var $form = $(e.target);
+                      // Get the BootstrapValidator instance
+                      var bv = $form.data('bootstrapValidator');
+                      // Use Ajax to submit form data
+                      $.post($form.attr('action'), $form.serialize(), function(result) {
+                      console.log(result);
+                      }, 'json');
+                      });
+                      });
+                      </script>
+                      
+                    </body>
+                  </html>
