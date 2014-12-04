@@ -10,9 +10,10 @@ Full HTML5 and CSS3 Website Design and Development
 **Version 2**
 
 * Creating New Transfer Page.
+* Adding accordion to Binding Bank and develope a form section.
+* Adding a Highlighter when Bank is selecting.
 * Update Validations
 * CSS Improvements
-* Adding accordion to Binding Bank and develope a form section.
 
 
 **Version 1**
