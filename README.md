@@ -1,11 +1,22 @@
 sky133
 ======
 
-Full HTML5 and CSS3 Website Design and Development
+Full HTML5, CSS3 and Bootstrap3 Website Design and Development
 
 ----
 
 ### Changelog
+
+**Version 3**
+
+* Apply patch for IE8 browsers and complete re design pages for IE8
+* Changing the Main Slider to compatible with IE8
+* Re-work on Casino page slide for IE8 and added View more option to lead to a new page to see all games.
+* Added image buttons, removed all CSS buttons to make compatible IE8
+* Header banners and Promotion banners are updated with new images
+* Customizing the navigation menu
+* CSS Improvements
+
 
 **Version 2**
 

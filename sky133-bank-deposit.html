@@ -14,6 +14,40 @@
     <link href="css/hover.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet" media="all">
     <script type="text/javascript" src="js/jspatch.js"></script>
+    <script type="text/javascript" src="js/respond.src.js"></script>
+    
+    <!--ie8 support-code-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--[if gte IE 8]>
+    <style>
+    .cust-margin-tab{
+    margin-left:10px !important;
+    margin-right:0px !important;
+    }
+    .checkbox-ie8m{
+    display:blog !important;
+    }
+    .rdb-value{
+    display:none !important;
+    }
+    .ie-8-logout-btn-menu{
+    
+    }
+    </style>
+    <![endif]-->
+    <style>
+    label{
+    font-size:13px !important;
+    font-weight:100 !important;
+    }
+    </style>
+    
   </head>
   <body>
     
@@ -77,7 +111,7 @@
     </li>
     <li class=""><a href="#" class="welcome-back-txt">WELCOME BACK, CESHI11<b class=""></b></a>
   </li>
-  <li class=""><a href="#" class="logout-btn-menu">LOGOUT<b class=""></b></a>
+  <li class=""><a href="#" class="logout-btn-menu logout-btn-img ">LOGOUT<b class=""></b></a>
 </li>
 </ul>
 </div>
@@ -243,14 +277,35 @@
                         <p class="font-color-white">Select Bank </p>
                       </div>
                       <div class="col-lg-4 tab-txt-padding">
-                        <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Personal Internet Backing Recharge</label>
+                        <div class="rdb-value">
+                          <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Personal Internet Backing Recharge</label>
+                        </div>
+                        <!--[if gte IE 8]>
+                        <div class="checkbox-ie8m">
+                          <label class="checkbox-ie8m">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                            Personal Internet Backing Recharge
+                          </label>
+                        </div>
+                        <![endif]-->
                         
                       </div>
                       <div class="col-lg-4 tab-txt-padding">
-                        <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked"/><label for="radio2" class="css-label radGroup1">Corporate Internet Banking Recharge</label>
+                        <div class="rdb-value">
+                          <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked"/><label for="radio2" class="css-label radGroup1">Corporate Internet Banking Recharge</label>
+                        </div>
+                        <!--[if gte IE 8]>
+                        <div class="checkbox-ie8m">
+                          <label class="checkbox-ie8m">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                            Corporate Internet Banking Recharge
+                          </label>
+                        </div>
+                        <![endif]-->
                       </div>
-                      <div class="row">
-                        <div class="col-lg-12 acc-img-padding-bottom">
+                      
+                      <div class="row cust-margin-tab">
+                        <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
                           <div class="col-lg-2 col-lg-2-cus-game-row">
                             <input type="image" src="img/account/acc1.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
                             <!-- <img src="img/account/acc1.png" class="logo1 img-responsive  float-cus" alt="Circular Image">-->
@@ -272,7 +327,7 @@
                             <input type="image" src="img/account/acc5.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
                           </div>
                         </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
+                        <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
                           <div class="col-lg-2 col-lg-2-cus-game-row">
                             <!--<img src="img/account/acc6.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
                             <input type="image" src="img/account/acc6.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
@@ -294,7 +349,7 @@
                             <input type="image" src="img/account/acc10.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
                           </div>
                         </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
+                        <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
                           <div class="col-lg-2 col-lg-2-cus-game-row">
                             <!--<img src="img/account/acc11.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
                             <input type="image" src="img/account/acc11.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
@@ -328,220 +383,259 @@
                         
                         <input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/>
                         <label for="radio5" class="css-label radGroup1 radGroup2">Option 2</label>-->
-                        <input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label radGroup1">Personal Internet Backing Recharge</label></td><td>
+                        <div class="rdb-value">
+                          <input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label radGroup1">Personal Internet Backing Recharge</label></td><td>
+                        </div>
+                        <!--[if gte IE 8]>
+                        <div class="checkbox-ie8m">
+                          <label class="checkbox-ie8m">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Personal Internet Backing Recharge
+                          </label>
+                        </div>
+                        <![endif]-->
                         
                       </div>
                       <div class="col-lg-4 tab-txt-padding">
-                        <input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/><label for="radio5" class="css-label radGroup1">Corporate Internet Banking Recharge</label></td><td>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <input type="image" src="img/account/acc1.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                            <!-- <img src="img/account/acc1.png" class="logo1 img-responsive  float-cus" alt="Circular Image">-->
+                        <div class="rdb-value">
+                          <input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/><label for="radio5" class="css-label radGroup1">Corporate Internet Banking Recharge</label></td><td></div>
+                          <!--[if gte IE 8]>
+                          <div class="checkbox-ie8m">
+                            <label class="checkbox-ie8m">
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                              Corporate Internet Banking Recharge
+                            </label>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <input type="image" src="img/account/acc2.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                            <!-- <img src="img/account/acc2.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                          <![endif]-->
+                        </div>
+                        <div class="row cust-margin-tab">
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <input type="image" src="img/account/acc1.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                              <!-- <img src="img/account/acc1.png" class="logo1 img-responsive  float-cus" alt="Circular Image">-->
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <input type="image" src="img/account/acc2.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                              <!-- <img src="img/account/acc2.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc3.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc3.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc4.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc4.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc5.png" class="logo1 img-responsive  float-cus " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc5.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc3.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc3.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc6.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc6.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc7.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc7.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc8.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc8.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc9.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc9.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc10.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc10.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc4.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc4.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc5.png" class="logo1 img-responsive  float-cus " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc5.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc11.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc11.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc12.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc12.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc13.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc13.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc14.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc14.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc15.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc15.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc6.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc6.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc7.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc7.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc8.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc8.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc9.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc9.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc10.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc10.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                        </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc11.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc11.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc12.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc12.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc13.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc13.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc14.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc14.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc15.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc15.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                    <div id="pane3" class="tab-pane">
-                      
-                      <div class="col-lg-2 tab-txt-padding">
-                        <p class="font-color-white">Select Bank </p>
-                      </div>
-                      <div class="col-lg-4 tab-txt-padding">
-                        <input type="radio" name="radiog_lite" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label radGroup1">Personal Internet Backing Recharge</label></td><td>
+                      <div id="pane3" class="tab-pane">
                         
-                      </div>
-                      <div class="col-lg-4 tab-txt-padding">
-                        <input type="radio" name="radiog_lite" id="radio7" class="css-checkbox" checked="checked"/><label for="radio7" class="css-label radGroup1">Corporate Internet Banking Recharge</label></td><td>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <input type="image" src="img/account/acc1.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                            <!-- <img src="img/account/acc1.png" class="logo1 img-responsive  float-cus" alt="Circular Image">-->
+                        <div class="col-lg-2 tab-txt-padding">
+                          <p class="font-color-white">Select Bank </p>
+                        </div>
+                        <div class="col-lg-4 tab-txt-padding">
+                          <div class="rdb-value">
+                            <input type="radio" name="radiog_lite" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label radGroup1">Personal Internet Backing Recharge</label></td><td>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <input type="image" src="img/account/acc2.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                            <!-- <img src="img/account/acc2.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                          <!--[if gte IE 8]>
+                          <div class="checkbox-ie8m">
+                            <label class="checkbox-ie8m">
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                              Personal Internet Backing Recharge
+                            </label>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc3.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc3.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                          <![endif]-->
+                          
+                        </div>
+                        <div class="col-lg-4 tab-txt-padding">
+                          <div class="rdb-value">
+                            <input type="radio" name="radiog_lite" id="radio7" class="css-checkbox" checked="checked"/><label for="radio7" class="css-label radGroup1">Corporate Internet Banking Recharge</label></td><td>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc4.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc4.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                          <!--[if gte IE 8]>
+                          <div class="checkbox-ie8m">
+                            <label class="checkbox-ie8m">
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                              Corporate Internet Banking Recharge
+                            </label>
                           </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc5.png" class="logo1 img-responsive  float-cus " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc5.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                          <![endif]-->
+                        </div>
+                        <div class="row cust-margin-tab">
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <input type="image" src="img/account/acc1.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                              <!-- <img src="img/account/acc1.png" class="logo1 img-responsive  float-cus" alt="Circular Image">-->
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <input type="image" src="img/account/acc2.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                              <!-- <img src="img/account/acc2.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc3.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc3.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc4.png" class="logo1 img-responsive float-cus " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc4.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc5.png" class="logo1 img-responsive  float-cus " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc5.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                          </div>
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc6.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc6.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc7.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc7.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc8.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc8.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc9.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc9.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc10.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc10.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                          </div>
+                          <div class="col-lg-12 acc-img-padding-bottom padding-zero-class">
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc11.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc11.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc12.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc12.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!-- <img src="img/account/acc13.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc13.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc14.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc14.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
+                            <div class="col-lg-2 col-lg-2-cus-game-row">
+                              <!--<img src="img/account/acc15.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
+                              <input type="image" src="img/account/acc15.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc6.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc6.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc7.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc7.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc8.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc8.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc9.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc9.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc10.png" class="logo1 img-responsive  float-cus   " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc10.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                        </div>
-                        <div class="col-lg-12 acc-img-padding-bottom">
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc11.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc11.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc12.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc12.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!-- <img src="img/account/acc13.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc13.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc14.png" class="logo1 img-responsive float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc14.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                          <div class="col-lg-2 col-lg-2-cus-game-row">
-                            <!--<img src="img/account/acc15.png" class="logo1 img-responsive  float-cus  " alt="Circular Image">-->
-                            <input type="image" src="img/account/acc15.png" name="" class="logo1 img-responsive  float-cus btTxt submit" id="saveForm" />
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                    
-                    </div><!-- /.tab-content -->
-                    </div><!-- /.tabbable -->
-                    <div class="tab-txt-padding">
                       
+                      </div><!-- /.tab-content -->
+                      </div><!-- /.tabbable -->
+                      <div class="tab-txt-padding">
+                        
+                        
+                        <button type="submit" class="btn btn-primary btn-lg  cus-btn-all-1   recharge-img">RECHARGE YOUR ACCOUNT</button>
+                      </div>
+                      </div><!--col-lg-10-->
                       
-                      <button type="submit" class="btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn">RECHARGE YOUR ACCOUNT</button>
                     </div>
-                    </div><!--col-lg-10-->
-                    
+                    </div><!--row-->
                   </div>
-                  </div><!--row-->
-                </div>
-                <div class="section-footer footer-bg-image">
-                  <div class="container">
-                    <div id="footer">
+                  <div class="section-footer footer-bg-image">
+                    <div class="container">
+                      <div id="footer">
+                        <div class="row">
+                          <div class="col-md-12 footer-link-css-center">
+                            <p><a href="#" class="footer-link-css">About Us</a><a href="#" class="footer-link-css" >•   Contact Us </a><a href="#" class="footer-link-css" >•   Deposits </a><a href="#" class="footer-link-css">•   FAQs</a><a href="#" class="footer-link-css">•   Technical Problems </a><a href="#" class="footer-link-css">•   Acting Joint Venture </a> <a href="#" class="footer-link-css">•   Liability Provisions </a><a href="#" class="footer-link-css">•   Privacy Policy </a></p>
+                          </div>
+                        </div>
+                        
+                      </div>
                       <div class="row">
-                        <div class="col-md-12 footer-link-css-center">
-                          <p><a href="#" class="footer-link-css">About Us</a><a href="#" class="footer-link-css" >•   Contact Us </a><a href="#" class="footer-link-css" >•   Deposits </a><a href="#" class="footer-link-css">•   FAQs</a><a href="#" class="footer-link-css">•   Technical Problems </a><a href="#" class="footer-link-css">•   Acting Joint Venture </a> <a href="#" class="footer-link-css">•   Liability Provisions </a><a href="#" class="footer-link-css">•   Privacy Policy </a></p>
+                        <div class="container">
+                          
+                          <p class="footer-copyright">Copyright © 2014, Sky133. All Rights Reserved</p>
+                          
                         </div>
                       </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="container">
-                        
-                        <p class="footer-copyright">Copyright © 2014, Sky133. All Rights Reserved</p>
-                        
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="container">
-                        
-                        <p class="footer-descri">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
-                        
+                      <div class="row">
+                        <div class="container">
+                          
+                          <p class="footer-descri">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p>
+                          
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <script src="js/jquery.js"></script>
-                <!-- Script to Activate the Carousel -->
-                <script>
-                $('.carousel').carousel({
-                interval: 50000 //changes the speed
-                })
-                </script>
-                <script src="js/bootstrap.min.js"></script>
-                <script>
-                $(function() {
-                window.prettyPrint && prettyPrint()
-                $(document).on('click', '.yamm .dropdown-menu', function(e) {
-                e.stopPropagation()
-                })
-                })
-                </script>
-                <!-- Bootstrap core JavaScript
-                ================================================== -->
-                <!-- Placed at the end of the document so the pages load faster -->
-                
-              </body>
-            </html>
+                  <script src="js/jquery.js"></script>
+                  <!-- Script to Activate the Carousel -->
+                  <script>
+                  $('.carousel').carousel({
+                  interval: 50000 //changes the speed
+                  })
+                  </script>
+                  <script src="js/bootstrap.min.js"></script>
+                  <script>
+                  $(function() {
+                  window.prettyPrint && prettyPrint()
+                  $(document).on('click', '.yamm .dropdown-menu', function(e) {
+                  e.stopPropagation()
+                  })
+                  })
+                  </script>
+                  <!-- Bootstrap core JavaScript
+                  ================================================== -->
+                  <!-- Placed at the end of the document so the pages load faster -->
+                  
+                </body>
+              </html>

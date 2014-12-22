@@ -18,7 +18,7 @@ background-position: 0 -19px;
 }
 label.css-label {
 
-background-image: url(../img/rdb.png);
+background-image: url(../img/rdb.png )!important;
 -webkit-touch-callout: none;
 -webkit-user-select: none;
 -khtml-user-select: none;

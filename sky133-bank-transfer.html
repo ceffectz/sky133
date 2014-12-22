@@ -28,6 +28,41 @@
     display:none !important;
     }
     </style>
+<!--ie8 support-code-->
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+     
+<!--[if gte IE 8]>
+<style>
+.cust-margin-tab{
+  margin-left:10px !important;
+  margin-right:0px !important;
+}
+.checkbox-ie8m{
+  display:blog !important;
+}
+.rdb-value{
+  display:none !important;
+}
+.ie-8-logout-btn-menu{
+  
+}
+
+</style>
+<![endif]-->
+
+<style>
+  label{
+    font-size:13px !important;
+    font-weight:100 !important;
+  }
+</style>
+
   </head>
   <body>
     
@@ -91,12 +126,14 @@
     </li>
     <li class=""><a href="#" class="welcome-back-txt">WELCOME BACK, CESHI11<b class=""></b></a>
   </li>
-  <li class=""><a href="#" class="logout-btn-menu">LOGOUT<b class=""></b></a>
+  <li class=""><a href="#" class="logout-btn-menu logout-btn-img">LOGOUT<b class=""></b></a>
 </li>
 </ul>
 </div>
 </div>
 </div> <!-- Fixed navbar -->
+
+
 <nav class="logoarea"><!--logoarea-->
 <div class="container">
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -168,6 +205,7 @@
 </div>
 <!-- /.container -->
 </nav><!--nav-menu-3-->
+
 <nav class="nav-menu-4">
 <div class="container cus-padding">
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -201,6 +239,7 @@
 </div>
 <!-- /.container -->
 </nav><!--nav-menu-4-->
+
 <div class="deposit-setion deposit-setion-height">
 <div class="container">
   <div class="row deposit-txt">
@@ -229,148 +268,188 @@
         <div class="col-lg-12">
           
           
-          <div class="panelm2 panelm2-default panel-01">
-            <div class="panelm2-heading thead-color">
-              <h1 class="panelm2-title your-main-acc-01" >TRANSFER</h1>
-            </div>
-            <div class="panelm2-body">
-              <form id="defaultForm-with" method="post" class="form-horizontal" action="target.php">
-                <div class="form-group">
-                  <label class="col-lg-3 cust-hide-class-padding">Master Account<sup>*</sup>
-                  </label>
-                  <div class="col-lg-3">
-                    <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="bank " name="bank " style="width: 100% !important;">
-                      <option value="2">Live games</option>
-                      <option value="3">Resort</option>
-                      <option value="4">Game</option>
-                      <option value="5">Vegas</option>
-                      
-                    </select>
-                  </div>
-                  <div class="col-lg-6">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 cust-hide-class-padding">Transfer to Amount:<sup>*</sup>
-                  </label>
-                  <div class="col-lg-3">
-                    <input type="text" class="form-control cus-input-txt" name="price" id="price"
-                    required data-bv-notempty-message="The amount is required" />
-                    
-                  </div>
-                  <div class="col-lg-6">
-                  </div>
-                </div>
-                <div class="form-group">
-                  
-                  <div class="col-lg-3">
-                    
-                  </div>
-                  <div class="col-lg-6">
-                    <button type="submit" class="button-s btn btn-primary btn-lg  logout-btn-menu cust-class-tranfer-btn" >Transfer</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+<div class="panelm2 panelm2-default panel-01">
+  <div class="panelm2-heading thead-color">
+    <h1 class="panelm2-title your-main-acc-01" >TRANSFER</h1>
+  </div>
+  <div class="panelm2-body">
+    <form id="defaultForm-with" method="post" class="form-horizontal" action="target.php">
+      <div class="form-group">
+        <label class="col-lg-3 cust-hide-class-padding">Master Account<sup>*</sup>
+        </label>
+        <div class="col-lg-3">
+          <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="bank " name="bank " style="width: 100% !important;">
+            <option value="2">Live games</option>
+            <option value="3">Resort</option>
+            <option value="4">Game</option>
+            <option value="5">Vegas</option>
             
-          </div>
-          <div class="panelm2 panelm2-default">
-            <div class="panelm2-heading thead-color">
-              <h1 class="panelm2-title your-main-acc-01">TRANSFER RECORD</h1>
+          </select>
+        </div>
+        <div class="col-lg-6">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-lg-3 cust-hide-class-padding">Transfer to Amount:<sup>*</sup>
+        </label>
+        <div class="col-lg-3">
+          <input type="text" class="form-control cus-input-txt" name="price" id="price"
+          required data-bv-notempty-message="The amount is required" />
+          
+        </div>
+        <div class="col-lg-6">
+        </div>
+      </div>
+      <div class="form-group">
+        
+        <div class="col-lg-3">
+          
+        </div>
+        <div class="col-lg-6">
+          <button type="submit" class="button-s btn btn-primary btn-lg  logout-btn-menu cust-class-tranfer-btn transfer-page-btn" >Transfer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+
+
+<div class="panelm2 panelm2-default">
+  <div class="panelm2-heading thead-color">
+    <h1 class="panelm2-title your-main-acc-01">TRANSFER RECORD</h1>
+  </div>
+
+
+  <div class="panelm2-body">
+
+
+
+<form id="defaultForm-with" method="post" class="form-horizontal" action="target.php">
+  
+  <div class="form-group">
+    <label class="col-lg-3 cust-hide-class-padding">Master Account<sup>*</sup>
+    </label>
+    <div class="col-lg-9 padding-zero-class">
+      <div class="col-lg-2">
+        <div class="rdb-value">
+        <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Last 24 hours</label>
+      </div>
+
+<!--[if gte IE 8]>
+<div class="checkbox-ie8m">
+    <label class="checkbox-ie8m">
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+     Last 24 hours
+  </label>
+</div>
+<![endif]-->
+
+
+      </div>
+      <div class="col-lg-4 ">
+        <div class="rdb-value">
+        <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked"/><label for="radio2" class="css-label radGroup1">The last 48 hours</label>
+      </div>
+      <!--[if gte IE 8]>
+<div class="checkbox-ie8m">
+    <label class="checkbox-ie8m">
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+     The last 48 hours
+  </label>
+</div>
+<![endif]-->
+      </div>
+    </div>
+    <div class="col-lg-6">
+    </div>
+  </div>
+
+
+
+
+      <div class="form-group">
+        <label class="col-lg-3 cust-hide-class-padding">Transfer to Amount:<sup>*</sup>
+          </label><!--col-lg-3-->
+          
+          <div class="col-lg-3">
+            <div class='input-group date' id='datetimepicker1'>
+              
+              <input  type="text" placeholder="click to show datepicker"  id="example1" class="form-control cus-input-txt btn-cust-width-02">
+              <span class="input-group-addon"> </span><span class="glyphicon glyphicon-calendar"></span>
             </div>
-            <div class="panelm2-body">
-              <form id="defaultForm-with" method="post" class="form-horizontal" action="target.php">
-                <div class="form-group">
-                  <label class="col-lg-3 cust-hide-class-padding">Master Account<sup>*</sup>
-                  </label>
-                  <div class="col-lg-9 padding-zero-class">
-                    <div class="col-lg-2">
-                      <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">Last 24 hours</label>
-                    </div>
-                    <div class="col-lg-4 ">
-                      <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked"/><label for="radio2" class="css-label radGroup1">The last 48 hours</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                  </div>
+            </div><!--col-lg-2-->
+            <div class="col-lg-1 padding-zero-class col-md-1-cust">
+              <p>To</p>
+              </div><!--col-lg-5-->
+              <div class="col-lg-3 ">
+                <div class='input-group date' id='datetimepicker1'>
+                  
+                  <input  type="text" placeholder="click to show datepicker"  id="example2" class="form-control cus-input-txt btn-cust-width-02">
+                  <span class="input-group-addon"></span><span class="glyphicon glyphicon-calendar"></span>
                 </div>
-                <div class="form-group">
-                  <label class="col-lg-3 cust-hide-class-padding">Transfer to Amount:<sup>*</sup>
-                    </label><!--col-lg-3-->
-                    <div class="col-lg-3">
-                      <div class='input-group date' id='datetimepicker1'>
-                        
-                        <input  type="text" placeholder="click to show datepicker"  id="example1" class="form-control cus-input-txt btn-cust-width-02">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                      </div>
-                      </div><!--col-lg-2-->
-                      <div class="col-lg-1 padding-zero-class col-md-1-cust">
-                        <p>To</p>
-                        </div><!--col-lg-5-->
-                        <div class="col-lg-3 ">
-                          <div class='input-group date' id='datetimepicker1'>
-                            
-                            <input  type="text" placeholder="click to show datepicker"  id="example2" class="form-control cus-input-txt btn-cust-width-02">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                          </div>
-                          
-                          </div><!--col-lg-2-->
-                          <div class="col-lg-5">
-                            </div><!--col-lg-5-->
-                          </div>
-                          <div class="form-group">
-                            
-                            <div class="col-lg-3">
-                              
-                            </div>
-                            <div class="col-lg-6">
-                              <button type="submit" class="button-s btn btn-primary btn-lg  logout-btn-menu cust-class-tranfer-btn" >Search record</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <table class="table table-bordered cust-table-padding-bottom">
-                      
-                      <thead class="thead-color">
-                        <tr class="tr-top">
-                          
-                          <th class="uppercase-txt"> date & time</th>
-                          <th class="uppercase-txt"> money</th>
-                          <th class="uppercase-txt">  from</th>
-                          <th class="uppercase-txt">to</th>
-                          <th class="uppercase-txt">status</th>
-                          
-                          
-                        </tr>
-                      </thead>
-                      <tbody class="tbody-color">
-                        <tr class="">
-                          <td class="p-style inbox-p-color">124154325</td>
-                          <td class="p-style inbox-p-color">Transaction</td>
-                          <td class="p-style inbox-p-color">Bank</td>
-                          <td class="p-style inbox-p-color">21/4/2014, 12:00PM</td>
-                          <td class="p-style inbox-p-color">50RMB</td>
-                          
-                          
-                          
-                          
-                        </tr>
-                        
-                        
-                      </tbody>
-                      
-                      
-                      
-                      
-                      
-                    </table>
-                    
-                  </div>
-                </div>
-                </div><!--row-->
+                
+                </div><!--col-lg-2-->
+                <div class="col-lg-5">
+                  </div><!--col-lg-5-->
+                  </div><!--form-group-->
+
+
+
+
+
+            <div class="form-group">
+              
+              <div class="col-lg-3">
                 
               </div>
+              <div class="col-lg-6">
+                <button type="submit" class="button-s btn btn-primary btn-lg  logout-btn-menu cust-class-tranfer-btn transfer-page-search-btn" >Search record</button>
+              </div>
+            </div>
+          </form>
+
+
+            </div><!--panel-body-->
+          </div>
+
+
+
+
+
+
+
+
+
+<table class="table table-bordered cust-table-padding-bottom">
+  
+  <thead class="thead-color">
+    <tr class="tr-top">
+      
+      <th class="uppercase-txt"> date & time</th>
+      <th class="uppercase-txt"> money</th>
+      <th class="uppercase-txt">  from</th>
+      <th class="uppercase-txt">to</th>
+      <th class="uppercase-txt">status</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody class="tbody-color">
+    <tr class="">
+      <td class="p-style inbox-p-color">124154325</td>
+      <td class="p-style inbox-p-color">Transaction</td>
+      <td class="p-style inbox-p-color">Bank</td>
+      <td class="p-style inbox-p-color">21/4/2014, 12:00PM</td>
+      <td class="p-style inbox-p-color">50RMB</td>   
+    </tr>  
+  </tbody>
+
+</table>
+
+</div></div></div>
+                    
+              
+           
               
               <div class="section-footer footer-bg-image">
                 <div class="container">

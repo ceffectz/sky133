@@ -26,6 +26,34 @@
     display:none !important;
     }
     </style>
+    <!--ie8 support-code-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 8]>
+    <style>
+    .cust-margin-tab{
+    margin-left:10px !important;
+    margin-right:0px !important;
+    }
+    .checkbox-ie8m{
+    display:blog !important;
+    }
+    .cus-left-right{
+    padding-left:0px !important;
+    }
+    .rdb-value{
+    display:none !important;
+    }
+    .ie-8-logout-btn-menu{
+    
+    }
+    </style>
+    <![endif]-->
+    
   </head>
   <body>
     
@@ -89,7 +117,7 @@
     </li>
     <li class=""><a href="#" class="welcome-back-txt">WELCOME BACK, CESHI11<b class=""></b></a>
   </li>
-  <li class=""><a href="#" class="logout-btn-menu">LOGOUT<b class=""></b></a>
+  <li class=""><a href="#" class="logout-btn-menu logout-btn-img">LOGOUT<b class=""></b></a>
 </li>
 </ul>
 </div>
@@ -228,7 +256,17 @@
                     <div class="form-group cust-form-group-with">
                       
                       <div class="col-lg-1 rdb-padding-top">
-                        <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1"></label>
+                        <div class="rdb-value">
+                          <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1"></label>
+                        </div>
+                        <!--[if gte IE 8]>
+                        <div class="checkbox-ie8m">
+                          <label class="checkbox-ie8m">
+                            <input type="radio" name="optionsRadios" id="optionsRadios" value="option" checked>
+                            
+                          </label>
+                        </div>
+                        <![endif]-->
                         
                       </div>
                       <div class="col-lg-7 withdraal-bank-img ">
@@ -326,10 +364,10 @@
                             <label class="col-lg-4 cust-hide-class-padding"></label>
                             <div class="col-lg-7 padding-zero-class">
                               <div class="col-sm-6 padding-zero-class btn-area-txt-align">
-                                <button type="submit" class=" ok-btn btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >OK</button>
+                                <button type="submit" class="withdraw-ok-btn ok-btn btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >OK</button>
                               </div>
                               <div class="col-sm-6 btn-area-txt-align ">
-                                <button type="button" class="button-s btn btn-primary btn-lg  buttonm2  cancel-menu " >Cancel</button>
+                                <button type="button" class="button-s btn  btn-lg  buttonm2  cancel-menu width-cancel " >Cancel</button>
                               </div>
                             </div>
                           </div>
@@ -348,7 +386,7 @@
                     <div class="col-lg-3 padding-zero-class cus-padding-top">
                       <p class="font-color-white">Withdraw Amount  </p>
                     </div>
-                    <div class="col-lg-3 withdraw-amount-game">
+                    <div class="col-lg-3 withdraw-amount-game cus-left-right">
                       <div class="form-group ">
                         <input type="text" class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="price" name="price" placeholder=" 200.00">
                       </div>
@@ -363,7 +401,7 @@
                       <div class="col-lg-3 padding-zero-class cus-padding-top">
                         <p class="font-color-white">Withdraw Amount  </p>
                       </div>
-                      <div class="col-lg-4 withdraw-amount-game">
+                      <div class="col-lg-4 withdraw-amount-game cus-left-right">
                         <div class="form-group ">
                           
                           <select class="form-control cus-input-txt withdraw-amount-cus-input-txt" id="game" name="game">
@@ -387,10 +425,10 @@
                           <div class="col-lg-3">
                             
                           </div>
-                          <div class="col-lg-4">
+                          <div class="col-lg-4 padding-zero-class">
                             <div class="form-group ">
                               
-                              <button type="submit" class="btn btn-primary btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game" >SUBMIT</button>
+                              <button type="submit" class="btn  btn-lg  cus-btn-all-1  btn-gradient-btn  withdraw-amount-game withdraw-submit-btn" >SUBMIT</button>
                               
                             </div>
                           </div>
